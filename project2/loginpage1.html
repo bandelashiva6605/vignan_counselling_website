@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="loginpage1.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  </head>
+  <body>
+    <h1>Login Form</h1>
+     <form onsubmit ="return validateForm()" action="target1.html">
+       <label for="name">Enter Name:</label>
+       <input id="name" type='text' name='username' placeholder='Enter Name' required><br><br>
+       <label for="mail">Enter Your mail id:</label>
+       <input id="mail" type='email' name='username' placeholder='Enter Mail id'><br><br>
+       <label for="pswd1">Create Your Password:</label>
+       <input id="pswd1" type='password' name='pwd' placeholder='Create Your Password'><br><br>
+       <span id = "message1" style="color:red"> </span> <br><br>
+       <label for="pswd2">Re-Enter Your Password :</label>
+       <input id="pswd2" type='password' name='pwd' placeholder='Confirm Your Password'><br><br>
+       <span id = "message2" style="color:red"> </span> <br><br>
+       <h3>Please Select your Gender:</h3>
+       <label for='m'>Male</label>
+       <input id='m' type='radio' name="gender" value="Male" required>
+       <label for='f'>Female</label>
+       <input id='f' type='radio' name="gender" value="Female" required><br><br>
+       <h3>Please Select Your Profession:</h3>
+       <label for='s'>Student</label>
+       <input id='s' type='radio' name="con" value="Student" required><br>
+       <label for='p'>Professor or Teacher</label>
+       <input id='p' type='radio' name="con" value="Professor or Teacher" required><br>
+       <label for='se'>software engineer</label>
+       <input id='se' type='radio' name="con" value="software engineer" required><br>
+       <label for='o'>other</label>
+       <input id='o' type='radio' name="con" value="other" required>
+       <h2>Please Select Languages you known:</h2>
+
+       <input class='ck' type="checkbox" name="languages" value="english" checked> English<br>
+       <input class='ck' type="checkbox" name="languages" value="telugu"> Telugu<br>
+       <input class='ck' type="checkbox" name="languages" value="hindi"> Hindi<br>
+       <input class='ck' type="checkbox" name="languages" value="tamil"> Tamil<br>
+       <label for="mobile">Enter Mobile Number:</label><br>
+       <input id="mobile" type="text" name="" value="" placeholder='Enter mobile number' pattern = "[0-9]{10}" title = "PHONE NUMBER CONSISTS OF 10 DIGITS PLEASE CHECK YOUR NUMBER ONECE AGAIN" required><br>
+
+       <button type="submit" name="sub" id="sub">SUBMIT</button>
+       <button type = "reset" value = "Reset" >Reset</button>
+    </form>
+  </body>
+  <script type="text/javascript" src="password.js"></script>
+</html>
